@@ -1,0 +1,193 @@
+body {
+
+    font-family: Arial, sans-serif;
+    color: #231f20;
+    font-size:13px;
+    line-height:18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a, a:visited {
+    color: #008c44;
+}
+a:hover{
+    font-weight: bold;
+    color: #008c44;
+    text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #231f20;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #008c44;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav>li>a.active {
+    color: #008c44;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;    
+    text-align: justify;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+a.logo {
+    background: url('../images/logo.png') no-repeat;
+    display: block;
+    height: 66px;
+    width: 328px;
+    background-size: contain;
+}
+
+h3.seperator {
+    background: url('../images/h3-line.png') repeat-x;
+    background-position: bottom;
+    background-size: auto 6px;
+    padding: 10px 0;
+    color: #008c44;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#page-about .content li {
+    padding-left: 0;
+}
+
+#page-about .content li::before {
+    content: "•";
+    font-size: 17px;
+    color: #e39717;
+    width: 15px;
+    display: inline-block;
+}
+
+#page-about .content li span.highlight {
+    font-weight: bold;
+    color: #008c44;
+}
+
+#page-product .productlist li {
+    color: #008c44;
+    font-weight: bold;
+}
+
+#page-product .productlist li::before {
+    content: "•";
+    font-size: 17px;
+    color: #e39717;
+    width: 20px;
+    display: inline-block;
+}
+
+#page-product h4 {
+    margin-top: 22px;
+    font-size: 18px;
+    color: #e39717;
+    font-weight: bold;
+}
+
+#page-product .contactnow {
+    color: red;
+    font-weight: bold;
+}
+
+#page-product .combwelcome {
+    font-size: 22px;
+    color: #008c44;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#page-condition .documentlist ul{
+    list-style-type:decimal;
+}
+
+footer {
+    margin-top: 20px;
+    background: url('../images/footer-bg.jpg') repeat-x;
+    height: 120px;
+    background-size: auto 120px;
+    padding-top: 60px;
+    color: white;
+}
+
+footer .container {
+    background-color: #008c44;
+}
+
+footer a,
+footer a:visited {
+    color: white;
+    text-decoration: none
+}
+
+footer p {
+    font-size: 13px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: initial;
+        padding-bottom: initial;
+    }
+    .navbar-right {
+        margin-top: 40px;
+    }
+    .navbar-nav li+li:before {
+        content: "|";
+        float: left;
+    }
+}
+
+@media (max-width: 767px) {
+    a.logo {
+        height: 50px;
+        width: 300px;
+    }
+}
